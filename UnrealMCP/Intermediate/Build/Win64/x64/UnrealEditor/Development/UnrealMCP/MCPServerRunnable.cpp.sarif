@@ -1,0 +1,145 @@
+{
+    "version": "2.1.0",
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "ruleId": "C4459",
+                    "message": {
+                        "text": "la declaración de 'BufferSize' oculta la declaración global"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/rodri/Desktop/unreal-mcp-main/MCPGameProject/Plugins/UnrealMCP/Source/UnrealMCP/Private/MCPServerRunnable.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///H:/UE_5.5/Engine/Source/Runtime/Core/Public/Containers/StringConv.h"
+                                },
+                                "region": {
+                                    "startLine": 669,
+                                    "startColumn": 9
+                                }
+                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 0,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/rodri/Desktop/unreal-mcp-main/MCPGameProject/Plugins/UnrealMCP/Source/UnrealMCP/Private/MCPServerRunnable.cpp"
+                                },
+                                "region": {
+                                    "startLine": 15,
+                                    "startColumn": 13
+                                }
+                            },
+                            "message": {
+                                "text": "vea la declaración de 'BufferSize'"
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///H:/UE_5.5/Engine/Source/Runtime/Core/Public/Containers/StringConv.h"
+                                },
+                                "region": {
+                                    "startLine": 669,
+                                    "startColumn": 1
+                                }
+                            },
+                            "message": {
+                                "text": "el contexto de creación de instancias de la plantilla (el más antiguo primero) es"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/rodri/Desktop/unreal-mcp-main/MCPGameProject/Plugins/UnrealMCP/Source/UnrealMCP/Private/MCPServerRunnable.cpp"
+                                },
+                                "region": {
+                                    "startLine": 94,
+                                    "startColumn": 65
+                                }
+                            },
+                            "message": {
+                                "text": "Vea la referencia a la creación de una instancia de clase plantilla \"TStringConversion<UE::Core::Private::FTCHARToUTF8_Convert,128>\" que se está compilando"
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        },
+                        {
+                            "id": 3,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///H:/UE_5.5/Engine/Source/Runtime/Core/Public/Containers/StringConv.h"
+                                },
+                                "region": {
+                                    "startLine": 663,
+                                    "startColumn": 7
+                                }
+                            },
+                            "message": {
+                                "text": "al compilar la función del miembro clase plantilla \"void TStringConversion<UE::Core::Private::FTCHARToUTF8_Convert,128>::Init(const wchar_t *,int32,UE::Core::Private::ENullTerminatedString)\""
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        },
+                        {
+                            "id": 4,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///H:/UE_5.5/Engine/Source/Runtime/Core/Public/Containers/StringConv.h"
+                                },
+                                "region": {
+                                    "startLine": 692,
+                                    "startColumn": 8
+                                }
+                            },
+                            "message": {
+                                "text": "vea la primera referencia a “TStringConversion<UE::Core::Private::FTCHARToUTF8_Convert,128>::Init” en “TStringConversion<UE::Core::Private::FTCHARToUTF8_Convert,128>::TStringConversion”"
+                            },
+                            "properties": {
+                                "nestingLevel": 2
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/rodri/Desktop/unreal-mcp-main/MCPGameProject/Plugins/UnrealMCP/Source/UnrealMCP/Private/MCPServerRunnable.cpp"
+                                },
+                                "region": {
+                                    "startLine": 94,
+                                    "startColumn": 33
+                                }
+                            },
+                            "message": {
+                                "text": "vea la primera referencia a “TStringConversion<UE::Core::Private::FTCHARToUTF8_Convert,128>::TStringConversion” en “FMCPServerRunnable::Run”"
+                            },
+                            "properties": {
+                                "nestingLevel": 2
+                            }
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "MSVC",
+                    "shortDescription": {
+                        "text": "Microsoft Visual C++ Compiler Warnings/Errors"
+                    },
+                    "informationUri": "https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/c-cpp-build-errors"
+                }
+            }
+        }
+    ]
+}
