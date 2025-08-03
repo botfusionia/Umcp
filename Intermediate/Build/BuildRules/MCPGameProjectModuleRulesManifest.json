@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\rodri\\Desktop\\unreal-mcp-main\\MCPGameProject\\Source\\MCPGameProject\\MCPGameProject.Build.cs",
+		"C:\\Users\\rodri\\Desktop\\unreal-mcp-main\\MCPGameProject\\Plugins\\UnrealMCP\\Source\\UnrealMCP\\UnrealMCP.Build.cs",
+		"C:\\Users\\rodri\\Desktop\\unreal-mcp-main\\MCPGameProject\\Source\\MCPGameProject.Target.cs",
+		"C:\\Users\\rodri\\Desktop\\unreal-mcp-main\\MCPGameProject\\Source\\MCPGameProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}
